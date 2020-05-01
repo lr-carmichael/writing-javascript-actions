@@ -1,6 +1,8 @@
 name: JS Actions
 
-on: [push]
+on:
+  pull_request:
+    types: [labeled]
 
 jobs:
   action:
@@ -11,5 +13,6 @@ jobs:
 
       - name: hello-action
         uses: ./.github/actions/hello-world
-        with:
-          first-greeting: "Chris"
+        
+      - name: ha-ha
+        uses: ./.github/actions/joke-action
