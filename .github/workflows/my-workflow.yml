@@ -26,10 +26,4 @@ jobs:
 
       - name: check-content
         run: |
-          pwd
-          ls ./
-          if [[ -f ./docker-compose.yml ]]
-          then
-            echo "docker-compose.yml exists on your filesystem"
-            exit 1
-          fi
+          ./scripts/invalid-docker-ports.sh
