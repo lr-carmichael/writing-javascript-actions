@@ -1,0 +1,16 @@
+name: Local Dev Check
+
+on:
+  pull_request:
+    paths:
+      - './docker-compose.yml'
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+
+    steps:
+      check-content:
+        - name: check-content
+          run: |
+            ./scripts/invalid-docker-ports.sh

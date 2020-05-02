@@ -23,7 +23,3 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           joke: ${{ steps.joke.outputs.joke-output }}
-
-      - name: check-content
-        run: |
-          ./scripts/invalid-docker-ports.sh
