@@ -1,5 +1,6 @@
 # Important: We should avoid exposing any ports between `20000` and `36384`
 # see here for reasons why: https://github.com/logrhythm/boreas/tree/master/documentation/troubleshooting
+# boo
 version: '3.7'
 
 volumes:

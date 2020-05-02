@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      check-content:
-        - name: check-content
-          run: |
-            ./scripts/invalid-docker-ports.sh
+      - uses: actions/checkout@v1
+      
+      - name: check-content
+        run: |
+          ./scripts/invalid-docker-ports.sh
