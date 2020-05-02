@@ -2,8 +2,8 @@ name: Local Dev Check
 
 on:
   pull_request:
-    ##paths:
-    ##  - './docker-compose.yml'
+    paths:
+      - 'local_dev/**'
 
 jobs:
   action:
