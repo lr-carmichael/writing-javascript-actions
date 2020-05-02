@@ -1,4 +1,5 @@
 # Welcome to your course 🎉
+boo
 
 ### Getting started
 
