@@ -14,4 +14,7 @@ jobs:
       
       - name: check-content
         run: |
+          # download yq
+          curl https://github.com/mikefarah/yq/releases/download/3.3.0/yq_linux_amd64 -o yq
+          chmod +x ./yq
           ./scripts/invalid-docker-ports.sh
